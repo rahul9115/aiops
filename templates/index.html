@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="3">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="chart2" class="chart">
+        
+
+    </div>
+    <div id="chart3" class="chart">
+        
+
+    </div>
+    <div id="chart4" class="chart">
+        
+
+    </div>
+    <div id="chart5" class="chart">
+        
+
+    </div>
+    <div id="chart6" class="chart">
+        
+
+    </div>
+    <div id="chart7" class="chart">
+        
+
+    </div>
+    <div id="chart8" class="chart">
+        
+
+    </div>
+    <div id="chart9" class="chart">
+        
+
+    </div>
+    <div id="chart" class="chart">
+        
+
+    </div>
+    <div id="chart1" class="chart">
+        
+
+    </div>
+</body>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script type="text/javascript">
+
+    var graphs = {{ graphJSON | safe}};
+    var graphs1 = {{ graphJSON1 | safe}};
+    var graphs2 = {{ graphJSON2 | safe}};
+    var graphs3 = {{ graphJSON3 | safe}};
+    var graphs4 = {{ graphJSON4 | safe}};
+    var graphs5 = {{ graphJSON5 | safe}};
+    var graphs6 = {{ graphJSON6 | safe}};
+    var graphs7 = {{ graphJSON7 | safe}};
+    var graphs8 = {{ graphJSON8 | safe}};
+    var graphs9 = {{ graphJSON9 | safe}};
+    Plotly.plot("chart", graphs, {});
+    Plotly.plot("chart1", graphs1, {});
+    Plotly.plot("chart2", graphs2, {});
+    Plotly.plot("chart3", graphs3, {});
+    Plotly.plot("chart4", graphs4, {});
+    Plotly.plot("chart5", graphs5, {});
+    Plotly.plot("chart6", graphs6, {});
+    Plotly.plot("chart7", graphs7, {});
+    Plotly.plot("chart8", graphs8, {});
+    Plotly.plot("chart9", graphs9, {});
+  
+
+</script>
+</html>
